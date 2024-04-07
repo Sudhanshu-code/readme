@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  text-decoration: none;
+}
+body {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-x: hidden;
+  top: 0; bottom: 0; left: 0;right: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(45deg,
+    rgba(0, 0, 3, 0.1),
+    rgba(0, 0, 0, 0.5)), url(../images/bookbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 98vh;
+}
+.container_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form,.container_box form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  text-align: center;
+  align-items: center;
+}
+
+.container form h3,.container_box form h3 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  text-transform: capitalize;
+  color: black;
+}
+.container_box form h3 a :first-child,
+.container form h3 a :first-child {
+  color: brown;
+}
+.container form h3 a :last-child,
+.container_box form h3 a :last-child {
+  color: black;
+}
+
+.container form .text_field,
+.container_box form .text_field {
+  width: 40%;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 13px 13px;
+  font-size: 15px;
+  color: black;
+  border: 2px solid brown;
+}
+.container form p,
+.container_box form p {
+  padding-top: 5px;
+  font-size: 25px;
+  color: black;
+}
+.container form p a,
+.container_box form p a {
+  color: brown;
+}
+.container form p a:hover,
+.container_box form p a:hover {
+  text-decoration: underline;
+}
+.container form .btn,
+.container_box form .btn {
+  background-color: #a84343;
+  color: white;
+  font-size: 20px;
+}
+.container form .btn:hover,
+.container_box form .btn:hover {
+  background: hsl(0, 41%, 39%);
+  border-radius: 8px solid #a84343;
+  cursor: pointer;
+}
+
+/* Message */
+.message {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  width: 61%;
+  background-color: #fff;
+  padding: 6px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  gap: 0px;
+  border: 2px solid brown;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.message span {
+  font-size: 22px;
+  color: brown;
+  font-weight:400;
+}
+.message i {
+  cursor: pointer;
+  color: brown;
+  font-size: 15px;
+}
+
+
+
+.show-products .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 27rem);
+  justify-content: center;
+  gap:1.5rem;
+  max-width: 1200px;
+  margin:0 auto;
+  align-items: flex-start;
+}
+
+.show-products{
+  padding-top: 0;
+  margin-top: 15px;
+}
+
+.show-products .box-container .box{
+  text-align: center;
+  padding:12px;
+  border-radius: .5rem;
+  border:2px solid black;
+}
+
+.show-products .box-container .box img{
+    height: 180px;
+
+}
+
+.show-products .box-container .box .name{
+  font-size: 1rem;
+  color:black;
+  text-transform: capitalize;
+}
+
+.show-products .box-container .box .price{
+  margin: 15px;
+  font-size: 20px;
+  color: brown;
+}
+.show-products .box-container .box .update_btn,.update_btn{
+  background-color: brown;
+  padding: 9px 15px;
+  margin: 6px;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+.show-products .box-container .box .delete_btn, .delete_btn{
+  background-color: red;
+  padding: 9px 15px;
+  margin: 6px;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+.edit-product-form{
+  /* min-height: 128vh; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2rem;
+  overflow-y: scroll;
+  /* position: fixed; */
+  top:0; left:0; 
+  z-index: 1200;
+  width: 100%;
+}
+
+.edit-product-form form{
+  width: 50rem;
+  padding:2rem;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: var(--white);
+}
+
+.edit-product-form form img{
+  height: 233px;
+  margin-bottom: 1rem;
+}
+
+.edit-product-form form .box{
+  margin: 6px 0;
+  padding: 1rem 3.4rem;
+  border: 2px solid brown;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 18px;
+  color: black;
+  width: 89%;
+}
